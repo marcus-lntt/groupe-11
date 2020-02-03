@@ -1,0 +1,45 @@
+/*@font-face {
+  font-family: "Ailerons";
+  src: url("src\assets\Ailerons-Regular.woff2") format("woff2"),
+         url("src\assets\Ailerons-Regular.woff") format("woff");
+ }
+*/
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    font-size: 24px;
+    font-family: arial;
+    padding: 20px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+
+  &__model {
+    text-decoration: none;
+    font-family: arial;
+    color: black;
+    padding: 16px;
+  }
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.perspective {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__choice {
+    display: flex;
+    justify-content: center;
+  }
+}
