@@ -133,19 +133,53 @@
 
   &__title {
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     font-family: arial;
+    text-align: center;
+    padding-top: 24px;
   }
   &__titleArticle {
     color: white;
     font-family: arial;
+    padding: 16px;
 
   }
   &__textArticle {
     color: white;
     font-family: arial;
+    text-align: center;
+    line-height: 18px;
   }
   &__socialMedia {
     background-color: white;
+  }
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+  }
+  &__label {
+    color: white;
+    font-family: arial;
+    padding: 16px;
+  }
+  &__submit {
+    padding: 4px;
+    margin-top: 16px;
+    font-family: arial;
+    
+  }
+  &__input[name=email] {
+    padding: 8px 40px 8px 12px;
+    background-color: black;
+    border-style: none none solid none;
+    border-color: white;
   }
 }
