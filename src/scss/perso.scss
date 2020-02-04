@@ -1,5 +1,255 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   padding: 0;
   font-family: 'abel';
+=======
+@font-face {
+  font-family: "Ailerons";
+  src: url("../assets/Ailerons-Regular.woff2") format("woff2"),
+         url("../assets/Ailerons-Regular.woff") format("woff");
+ }
+
+ @font-face {
+  font-family: "Abel";
+  src: url("../assets/Abel-Regular.woff2") format("woff2"),
+         url("../assets/Abel-Regular.woff") format("woff");
+ }
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    font-size: 26px;
+    font-family: arial;
+    padding: 20px;
+    font-family: 'Ailerons';
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+
+  &__model {
+    text-decoration: none;
+    font-family: 'Abel';
+    font-size: 22px;
+    color: black;
+    padding: 16px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.perspective {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__choice {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+  }
+}
+
+.yourBag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    font-size: 18px;
+    font-family: 'Abel';
+    padding-top: 24px;
+  }
+  &__price {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Abel';
+    padding: 16px;
+  }
+}
+
+.personnalize {
+  margin-top: 24px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  &__bagPart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__materials {
+    height: 50px;
+  }
+  &__img {
+    width: 60px;
+    padding: 0 40px 24px 0;
+  }
+  &__material1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url(../assets/linen.jpg);
+    margin-right: 16px;
+    position: relative;
+
+    &::before {
+      content: "Linen";
+      font-size: 18px;
+      font-family: 'Abel';
+      position: absolute;
+      top: -25px;
+      left: 5px;
+    }
+  }
+  &__material2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url(../assets/black-plastic.jpg);
+    margin-left: 16px;
+    position: relative;
+    
+    &::after {
+      content: "Plastic";
+      font-size: 18px;
+      font-family: 'Abel';
+      position: absolute;
+      top: -25px;
+      left: 5px;
+    }
+   
+  }
+  
+}
+
+.information {
+  padding: 40px;
+
+
+  &__text {
+    font-family: 'Abel';
+    font-size: 18px;
+    color: #3e3e3e;
+    line-height: 18px;;
+  }
+}
+
+.preOrder {
+  background-color: white;
+  margin: 20px 40px 40px 40px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input[name=email] {
+    padding: 8px 80px 8px 16px;
+    border-style: none none solid none;
+    border-color: #3e3e3e;
+
+    &::placeholder {
+      font-size: 16px;
+      font-family: 'Abel';
+    }
+  }
+  &__label {
+    font-family: 'Abel';
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 16px;
+  }
+  &__submit {
+    font-size: 18px;
+    font-family: 'Abel';
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-color: black;
+    padding: 8px 12px 8px 12px;
+    margin-top: 16px;
+  }
+}
+
+.footerPerso {
+  background-color: black;
+
+  &__title {
+    color: white;
+    font-size: 22px;
+    font-family: 'Abel';
+    text-align: center;
+    padding-top: 24px;
+  }
+  &__titleArticle {
+    color: white;
+    font-family: 'Abel';
+    padding: 16px;
+    font-size: 20px;
+
+  }
+  &__textArticle {
+    color: white;
+    font-family: 'Abel';
+    text-align: center;
+    line-height: 18px;
+    font-size: 18px;
+  }
+  &__socialMedia {
+    background-color: white;
+  }
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+  }
+  &__label {
+    color: white;
+    font-family: 'Abel';
+    padding: 16px;
+    font-size: 18px;
+  }
+  &__submit {
+    padding: 4px;
+    margin-top: 16px;
+    font-family: 'Abel';
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    border-color: black;
+    color: white;
+    
+  }
+  &__input[name=email] {
+    padding: 8px 40px 8px 12px;
+    background-color: black;
+    border-style: none none solid none;
+    border-color: white;
+    color: white;
+  }
+  &__socialMedia {
+    padding: 16px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+>>>>>>> 686b61bef018db68305c93d746b3b1eff89c3c82
 }
