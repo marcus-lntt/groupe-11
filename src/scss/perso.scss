@@ -17,6 +17,7 @@
          url("../assets/Abel-Regular.woff") format("woff");
  }
 
+ 
 .title {
   display: flex;
   justify-content: center;
@@ -177,13 +178,6 @@
   
 }
 
-.countries {
-  display: flex;
-  width:300vw;
-  transform: translateX(-100vw);
-  animation: transform 0.3s;
-}
-
 .personnalize__material1--silk {
   background-image: url(../assets/silk.jpg);
 }
@@ -333,4 +327,39 @@
     display: flex;
     justify-content: space-evenly;
   }
+}
+
+.countries {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 130vh;
+  
+  .visible {
+    visibility: visible;
+    position: static;
+    opacity: 1;
+    transform: translateY(0);
+  }
+ 
+}
+.france {
+  transform: translateY(1000px);
+  visibility: hidden;
+  position: absolute;
+ 
+}
+.southKorea{
+  transform: translateY(1000px);
+  visibility: hidden;
+  position: absolute;
+}
+.italy{
+  transform: translateY(1000px);
+  visibility: hidden;
+  position: absolute;
+}
+
+body, html {
+  overflow-x: hidden;
 }
