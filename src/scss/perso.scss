@@ -1,9 +1,9 @@
-<<<<<<< HEAD
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'abel';
-=======
+@mixin medium {
+  @media(min-width: 768px) {
+    @content;
+  }
+}
+
 @font-face {
   font-family: "Ailerons";
   src: url("../assets/Ailerons-Regular.woff2") format("woff2"),
@@ -25,6 +25,10 @@ body {
     font-family: arial;
     padding: 20px;
     font-family: 'Ailerons';
+
+    @include medium {
+      font-size: 48px;
+    }
   }
 }
 
@@ -38,6 +42,11 @@ body {
     font-size: 22px;
     color: black;
     padding: 16px;
+
+    @include medium {
+      font-size: 32px;
+      padding: 48px;
+    }
 
     &:hover {
       text-decoration: underline;
@@ -59,6 +68,12 @@ body {
     display: flex;
     justify-content: center;
     height: 20px;
+    margin: 16px;
+
+    @include medium {
+      height: 30px;
+      margin: 24px;
+    }
   }
 }
 
@@ -71,12 +86,20 @@ body {
     font-size: 18px;
     font-family: 'Abel';
     padding-top: 24px;
+
+   @include medium {
+     font-size: 28px;
+   }
   }
   &__price {
     font-size: 22px;
     font-weight: bold;
     font-family: 'Abel';
     padding: 16px;
+
+    @include medium {
+      font-size: 32px;
+    }
   }
 }
 
@@ -85,6 +108,7 @@ body {
   display: flex;
   flex-direction:column;
   align-items: center;
+
   &__bagPart {
     display: flex;
     flex-direction: row;
@@ -96,6 +120,11 @@ body {
   &__img {
     width: 60px;
     padding: 0 40px 24px 0;
+
+    @include medium {
+      width: 80px;
+      padding: 0 80px 24px 0;
+    }
   }
   &__material1 {
     width: 50px;
@@ -104,6 +133,12 @@ body {
     background-image: url(../assets/linen.jpg);
     margin-right: 16px;
     position: relative;
+
+    @include medium {
+      margin-right: 24px;
+      width: 60px;
+      height: 60px;
+    }
 
     &::before {
       content: "Linen";
@@ -121,6 +156,12 @@ body {
     background-image: url(../assets/black-plastic.jpg);
     margin-left: 16px;
     position: relative;
+
+    @include medium {
+      margin-left: 24px;
+      width: 60px;
+      height: 60px;
+    }
     
     &::after {
       content: "Plastic";
@@ -135,15 +176,42 @@ body {
   
 }
 
+.countries {
+  display: flex;
+  width:300vw;
+  transform: translateX(-100vw);
+  animation: transform 0.3s;
+}
+
+.personnalize__material1--silk {
+  background-image: url(../assets/silk.jpg);
+}
+
+.personnalize__material1--murshroom {
+  background-image: url(../assets/mushroomleather.png);
+}
+
 .information {
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  
 
-
+  @include medium {
+  margin-bottom: 40px;
+  margin-top: 16px;
+  }
   &__text {
     font-family: 'Abel';
     font-size: 18px;
     color: #3e3e3e;
-    line-height: 18px;;
+    line-height: 18px;
+
+    @include medium {
+      font-size: 28px;
+      line-height: 28px;
+      text-align: center;
+    }
   }
 }
 
@@ -163,6 +231,11 @@ body {
     &::placeholder {
       font-size: 16px;
       font-family: 'Abel';
+
+      @include medium {
+        font-size: 26px;
+        overflow: visible;
+      }
     }
   }
   &__label {
@@ -170,6 +243,10 @@ body {
     font-size: 18px;
     font-weight: bold;
     padding-bottom: 16px;
+
+    @include medium {
+      font-size: 28px;
+    }
   }
   &__submit {
     font-size: 18px;
@@ -180,6 +257,10 @@ body {
     border-color: black;
     padding: 8px 12px 8px 12px;
     margin-top: 16px;
+
+    @include medium {
+      font-size: 28px;
+    }
   }
 }
 
@@ -251,5 +332,4 @@ body {
     display: flex;
     justify-content: space-evenly;
   }
->>>>>>> 686b61bef018db68305c93d746b3b1eff89c3c82
 }
