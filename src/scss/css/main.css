@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'abel';
+}
+
+
+@media (min-width:0px) and (max-width:414px) {
+  header {
+    background: black;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width:415px) and (max-width:1024px) {
+  header {
+    background: black;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+/*
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+  background: url(./img/seoul1.png) no-repeat;
+  background-size: cover;
+  color: white;
+  */
+
+
+}
+
+) img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  width: 290px;
+
+
+
+}
+
+.first-img {
+
+  text-align: center;
+}
+
+.madein {
+  font-size: 28px;
+
+  font-weight: lighter;
+}
+
+.description {
+  font-size: 28px;
+  font-family: 'roboto';
+
+  font-weight: bold;
+}
+
+
+.slide1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+  background-size: cover;
+  color: white;
+
+}
+
+
+
+.text-bas {
+  padding-top: 380px;
+  text-align: center;
+  top: 50%;
+
+}
+
+.yourmodel {
+
+  font-size: 20px;
+  text-align: center;
+
+
+
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 28px;
+  list-style: none;
+  font-weight: lighter;
+  margin: 10px;
+
+}
+
+.korea {}
+
+.second-img {
+  width: 100%;
+  height: 730px;
+  background-color: black;
+  color: white;
+  font-family: 'roboto';
+  text-align: center;
+  font-size: 22px;
+  padding-top: 100px;
+
+}
+
+
+
+.sec-description {
+  padding-top: 300px;
+  font-weight: normal;
+  padding: 30px;
+}
+
+.fashion {
+  font-weight: bold;
+}
+
+.third-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(./img/paris.png) no-repeat;
+  background-size: cover;
+  color: white;
+
+
+}
+
+#madeinfrance {
+  text-align: left;
+  font-size: 36px;
+  font-family: 'roboto';
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 0;
+  padding-top: 550px;
+  margin-bottom: 0;
+  color: white;
+
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.f {
+  font-size: 24px;
+  text-align: left;
+  font-family: 'roboto';
+  font-weight: 600;
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+
+
+}
+
+.svoirfaire {
+  font-size: 22px;
+  margin-left: 35px;
+  margin-top: 0;
+  font-weight: lighter;
+
+}
+
+.custom {
+  margin-left: 35px;
+  color: black;
+  border-style: none;
+  line-height: 2.5;
+  font-size: 16px;
+  padding: 0 20px;
+  background-color: #D68D59;
+  font-family: 'abel';
+  text-align: center;
+
+
+}
+
+.custom:hover {
+  background-color: hsl(25, 60%, 49%);
+
+}
+
+.sacfrance {
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  right: 0;
+
+}
+}
+
+@media (min-width:415) and (max-width:1024px) {
+  .slide1 {
+    margin: 0;
+
+    padding: 0;
+    position: relative;
+
+    bottom: 0;
+    background-size: cover;
+    color: white;
+
+  }
