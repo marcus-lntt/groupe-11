@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./scss/reset.scss">
-  <link rel="stylesheet" href="./scss/perso.scss">
-  <link rel="stylesheet" href="./css/main.css>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="scss/reset.scss">
+  <link rel="stylesheet" href="scss/perso.scss">
+  <script src="js/perso.js"></script>
   <title>MadeIn</title>
 </head>
 
@@ -17,12 +17,12 @@
     <h1 class="title__text">MadeIn</h1>
   </header>
   <div class="menu">
-    <a class="menu__model" href="">FRANCE</a>
-    <a class="menu__model" href="">SOUTH KOREA</a>
-    <a class="menu__model" href="">ITALY</a>
+    <p id="fr" class="menu__model" href="">FRANCE</p>
+    <p id="sk" class="menu__model menu" href="">SOUTH KOREA</p>
+    <p id="it" class="menu__model menu" href="">ITALY</p>
   </div>
   <section class="countries">
-  <section class="france">
+  <section class="france visible" >
     <div class="product">
       <img class="product__img" src="assets/france-bag.png" alt="linen-bag">
     </div>
