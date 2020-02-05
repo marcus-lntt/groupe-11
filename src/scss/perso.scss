@@ -4,6 +4,11 @@
   }
 }
 
+@mixin large {
+  @media(min-width: 1366px) {
+    @content;
+  }
+}
 
 @font-face {
   font-family: "Ailerons";
@@ -54,6 +59,10 @@
       text-decoration: underline;
     }
   }
+}
+
+.southKorea.visible {
+
 }
 
 .product {
@@ -333,14 +342,18 @@
   position: relative;
   display: flex;
   width: 100vw;
-  height: 130vh;
-  
-  .visible {
-    visibility: visible;
-    position: static;
-    opacity: 1;
-    transform: translateY(0);
+  height: 140vh;
+
+  @include medium {
+    height: 170vh;
   }
+  
+  // .visible {
+  //   visibility: visible;
+  //   position: static;
+  //   opacity: 1;
+  //   transform: translateY(0);
+  // }
  
 }
 .france {
@@ -358,6 +371,27 @@
   transform: translateY(1000px);
   visibility: hidden;
   position: absolute;
+}
+
+.france.visible{
+  visibility: visible;
+    position: static;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.southKorea.visible{
+  visibility: visible;
+    position: static;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.italy.visible{
+  visibility: visible;
+    position: static;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 body, html {
