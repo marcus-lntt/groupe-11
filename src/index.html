@@ -17,17 +17,42 @@
 
     <title>Maison Longoza</title>
   </head>
+  <script>
+    var index = 0;
+    window.onload = function() {
+      slideShow();
+    };
+    function slideShow() {
+      var i;
+      var x = document.getElementsByClassName("slide1");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      index++;
+      if (index > x.length) {
+        index = 1;
+      }
+      x[index - 1].style.display = "block";
+      setTimeout(slideShow, 1000);
+    }
+  </script>
 
   <body>
     <header>
+        <div class="anima_back">
       <img src="./scss/css/img/LOGO_w.png" alt="logo" />
+    </header>
+    
+    
+      <img class="slide1" src="./scss/css/img/seoul1.png" />
+      <img class="slide1" src="./scss/css/img/italy1.png" />
+      <img class="slide1" src="./scss/css/img/france1.png" />
       <div class="first-img">
-        <p class="madein">MadeIn</p>
-        <p class="description">
-          Choose your materials to create your unique <br />eco-friendly
-          backpack
-        </p>
-      </div>
+          <p class="madein">MadeIn</p>
+          <p class="description">
+            Choose your materials to create your unique <br />eco-friendly backpack
+          </p>
+        </div>
       <div class="text-bas">
         <p class="yourmodel">Choose your model</p>
 
@@ -39,7 +64,8 @@
           <li><a href="">ITALY</a></li>
         </ul>
       </div>
-    </header>
+    </div>
+
     <div class="second-img">
       <div class="image-pays">
         <img src="./scss/css/img/Group 3.png" alt="image de pays " />

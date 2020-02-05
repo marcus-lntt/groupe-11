@@ -5,19 +5,38 @@ body {
 }
 
 
+@media (min-width:0px) and (max-width:414px) {
+  header {
+    background: black;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width:415px) and (max-width:1024px) {
+  header {
+    background: black;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+/*
 header {
   position: relative;
   width: 100%;
   height: 100vh;
   bottom: 0;
-  background: url(./img/MODEL.gif) no-repeat;
+  background: url(./img/seoul1.png) no-repeat;
   background-size: cover;
   color: white;
+  */
 
 
 }
 
-img {
+) img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -46,6 +65,18 @@ img {
   font-weight: bold;
 }
 
+
+.slide1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+  background-size: cover;
+  color: white;
+
+}
 
 
 
@@ -198,3 +229,17 @@ a:active {
   right: 0;
 
 }
+}
+
+@media (min-width:415) and (max-width:1024px) {
+  .slide1 {
+    margin: 0;
+
+    padding: 0;
+    position: relative;
+
+    bottom: 0;
+    background-size: cover;
+    color: white;
+
+  }
